@@ -1,0 +1,27 @@
+ &control
+    calculation  = 'scf'
+    restart_mode = 'from_scratch',
+    prefix       = 'CO-molecule',
+    tprnfor      = .true.
+    pseudo_dir   = 'PP',
+    outdir       = 'calc'
+ /
+ &system
+    ibrav   = 1,
+    a       = 12.0,
+    nat     = 2, 
+    ntyp    = 2,
+    ecutwfc = 22.0,
+    ecutrho = 140.0,
+ /
+ &electrons
+    mixing_beta = 0.5
+    conv_thr    = 1.0d-8
+ /
+ATOMIC_SPECIES
+ O  1.0  O.pz-rrkjus.UPF
+ C  1.00 C.pz-rrkjus.UPF
+ATOMIC_POSITIONS angstrom
+ O 0.00 0.00 0.00
+ C 1.40 0.00 0.00
+K_POINTS gamma

@@ -1,0 +1,28 @@
+&control
+  calculation  = 'nscf',
+  prefix       = 'germanium',
+  outdir       = 'outdir',
+  pseudo_dir   = '../PP/'
+  disk_io      = 'low'
+  tstress      = .false.
+  tprnfor      = .false.
+  verbosity    = 'low'
+/
+&system
+  ibrav     = 2, 
+  celldm(1) = 11.00, 
+  nat       = 2, 
+  ntyp      = 1,
+  nbnd      = 8
+  ecutwfc   = 40.0,
+/
+ &electrons
+  diagonalization = 'david'
+ /
+ATOMIC_SPECIES
+ Ge  72.64  Ge.pbe-dn-rrkjus_psl.0.2.2.UPF
+ATOMIC_POSITIONS crystal
+ Ge 0.00 0.00 0.00
+ Ge 0.25 0.25 0.25
+K_POINTS automatic
+ 12 12 12 0 0 0
