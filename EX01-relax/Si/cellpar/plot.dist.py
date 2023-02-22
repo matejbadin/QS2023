@@ -2,8 +2,8 @@
 
 import os
 import numpy as np
-import matplotlib as mpl
-mpl.use('Agg')
+import matplotlib as mlt
+mlt.use('Agg')
 from matplotlib import pyplot as plt
 
 results = []
@@ -24,6 +24,4 @@ for d, dn, fn in os.walk("."):
 results = sorted(results, key=lambda x: x[0])
 results = np.array(results).T
 plt.plot(results[0],results[1], linewidth=2)
-plt.xlabel("Cutoff [Ry]")
-plt.ylabel("Energy [Ry]")
 plt.savefig("plot.png")

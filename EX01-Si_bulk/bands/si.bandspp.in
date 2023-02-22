@@ -1,7 +1,0 @@
-&bands
-    prefix     = "silicon",
-    outdir     = "outdir",
-    filband    = "si.bands",
-    no_overlap = .true.,
-/
-

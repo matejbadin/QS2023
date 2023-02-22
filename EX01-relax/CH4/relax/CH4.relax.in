@@ -1,0 +1,34 @@
+ &control
+    calculation   = 'relax'
+    restart_mode  = 'from_scratch',
+    prefix        = 'CH4-molecule',
+    tprnfor       = .false.
+    pseudo_dir    = '../PP',
+    outdir        = 'calc'
+    forc_conv_thr = 0.0001
+ /
+ &system
+    ibrav   = 1,
+    a       = 12.0,
+    nat     = 5,
+    ntyp    = 2,
+    ecutwfc = 22.0,
+    ecutrho = 120.0,
+ /
+ &electrons
+    mixing_beta = 0.5
+    conv_thr    = 1.0d-8
+ /
+ &ions
+    ion_dynamics = "bfgs",
+ /
+ATOMIC_SPECIES
+ H  4.00 H.pbe-kjpaw_psl.0.1.UPF
+ C  1.00 S.pbe-n-kjpaw_psl.0.1.UPF
+ATOMIC_POSITIONS angstrom
+ C 1.50 0.00 0.00
+ H 0.00 0.05 0.00
+ H 3.00 0.00 0.00
+ H 0.00 3.00 0.00
+ H 0.00 0.00 3.00
+K_POINTS gamma
