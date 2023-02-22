@@ -12,8 +12,8 @@
     a       = 12.0,
     nat     = 5,
     ntyp    = 2,
-    ecutwfc = 22.0,
-    ecutrho = 120.0,
+    ecutwfc = 50.0,
+    ecutrho = 400.0,
  /
  &electrons
     mixing_beta = 0.5
@@ -29,6 +29,6 @@ ATOMIC_POSITIONS angstrom
  C 1.50 0.00 0.00
  H 0.00 0.05 0.00
  H 3.00 0.00 0.00
- H 0.00 3.00 0.00
- H 0.00 0.00 3.00
+ H 0.00 1.50 0.00
+ H 0.00 0.00 1.50
 K_POINTS gamma
