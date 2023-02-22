@@ -16,7 +16,7 @@
     ecutrho = 400.0,
  /
  &electrons
-    mixing_beta = 0.5
+    mixing_beta = 0.7
     conv_thr    = 1.0d-8
  /
  &ions
