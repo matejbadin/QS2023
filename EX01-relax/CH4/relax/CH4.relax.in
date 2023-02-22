@@ -2,7 +2,7 @@
     calculation   = 'relax'
     restart_mode  = 'from_scratch',
     prefix        = 'CH4-molecule',
-    tprnfor       = .false.
+    tprnfor       = .true.
     pseudo_dir    = '../PP',
     outdir        = 'calc'
     forc_conv_thr = 0.0001
