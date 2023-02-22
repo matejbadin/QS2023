@@ -9,7 +9,7 @@ min_a = 1.0
 max_a = 1.2
 stp_a = 15
 
-run_cmd = "mpirun -np 1 pw.x < scf.in > scf.out"
+run_cmd = "mpirun -np 1 /nfs/raid2/software/QE-7.1/bin/pw.x < scf.in > scf.out"
 
 for a in np.linspace(min_a, max_a, stp_a):
    
