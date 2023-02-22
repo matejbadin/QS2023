@@ -27,6 +27,6 @@ ATOMIC_SPECIES
  O  1.00 O.pbe-n-kjpaw_psl.1.0.0.UPF
 ATOMIC_POSITIONS angstrom
  H 0.00 0.05 0.00
- O 1.20 0.00 0.00
- H 2.40 0.00 0.00
+ O 1.40 0.00 0.00
+ H 2.80 0.00 0.00
 K_POINTS gamma
