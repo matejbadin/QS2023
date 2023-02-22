@@ -2,7 +2,7 @@
     calculation   = 'relax'
     restart_mode  = 'from_scratch',
     prefix        = 'H2O-molecule',
-    tprnfor       = .false.
+    tprnfor       = .true.
     pseudo_dir    = '../PP',
     outdir        = 'calc'
     forc_conv_thr = 0.0001
@@ -12,11 +12,11 @@
     a       = 12.0,
     nat     = 3, 
     ntyp    = 2,
-    ecutwfc = 22.0,
-    ecutrho = 120.0,
+    ecutwfc = 50.0,
+    ecutrho = 400.0,
  /
  &electrons
-    mixing_beta = 0.5
+    mixing_beta = 0.7
     conv_thr    = 1.0d-8
  /
  &ions
@@ -27,6 +27,6 @@ ATOMIC_SPECIES
  O  1.00 O.pbe-n-kjpaw_psl.1.0.0.UPF
 ATOMIC_POSITIONS angstrom
  H 0.00 0.05 0.00
- O 1.50 0.00 0.00
- H 3.00 0.00 0.00
+ O 1.20 0.00 0.00
+ H 2.40 0.00 0.00
 K_POINTS gamma
