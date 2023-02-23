@@ -1,6 +1,6 @@
  &INPUTPP
-  prefix  = "cu",
-  outdir  = "outdir"
+  prefix  = "N2-molecule",
+  outdir  = "calc"
   filplot = "plt"
   plot_num = 0
  /
