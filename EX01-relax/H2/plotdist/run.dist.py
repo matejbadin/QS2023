@@ -3,7 +3,7 @@
 import os
 import numpy as np
 
-source = "CO.scf.in"
+source = "H2.scf.in"
 
 min_a = 1.0
 max_a = 1.2
