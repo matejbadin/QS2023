@@ -1,0 +1,11 @@
+ &INPUTPP
+  prefix  = "N2-molecule",
+  outdir  = "calc"
+  filplot = "plt"
+  plot_num = 0
+ /
+ &plot
+  iflag = 3
+  output_format = 6
+  fileout = "CHD.cube"
+ /
