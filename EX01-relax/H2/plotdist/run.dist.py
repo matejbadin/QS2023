@@ -5,7 +5,7 @@ import numpy as np
 
 source = "H2.scf.in"
 
-min_a = 1.0
+min_a = 0.6
 max_a = 1.2
 stp_a = 15
 
