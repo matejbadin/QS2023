@@ -1,8 +1,8 @@
  &PROJWFC
-  prefix     = 'ni'
+  prefix     = 'cu'
   outdir     = 'outdir'
-  filpdos    = 'ni.dos',
-  Emin       = 5,
+  filpdos    = 'cu.dos',
+  Emin       = 0.0,
   Emax       = 25.0,
   DeltaE     = 0.05
  /

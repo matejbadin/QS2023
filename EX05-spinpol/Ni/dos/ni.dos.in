@@ -1,0 +1,8 @@
+&dos
+  outdir   = "outdir",
+  prefix   = "ni"
+  fildos   = "ni.dos",
+  Emin     = -0.0,
+  Emax     = 60.0,
+  DeltaE   = 0.05
+/
