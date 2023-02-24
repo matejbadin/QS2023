@@ -1,5 +1,5 @@
 &PROJWFC
   prefix  = 'carbon-diamond',
   outdir  = 'carbon-diamond-outdir',
-  filpdos = 'carbond-diamond_pdos.dat'
+  filpdos = 'carbon-diamond_pdos.dat'
 /
