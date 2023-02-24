@@ -1,0 +1,30 @@
+ &control
+    calculation = 'bands'
+    prefix      = 'carbon-diamond'
+    outdir      = 'carbon-diamond-outdir',
+    pseudo_dir  = '../PP'
+ /
+ &system
+    ibrav     = 2, 
+    celldm(1) = 6.675,
+    nat       = 2, 
+    ntyp      = 1,
+    ecutwfc   = 23.0, 
+    nbnd      = 4,
+    input_dft = 'rvv10',
+ /
+ &electrons
+    diagonalization='david'
+ /
+ATOMIC_SPECIES
+ C  12.0107  C.rvv10-n-kjpaw_psl.1.0.0.UPF
+ATOMIC_POSITIONS crystal
+ C  0.000 0.000 0.000
+ C  0.250 0.250 0.250
+K_POINTS
+   0.0000000000     0.0000000000     0.0000000000  30 !GAMMA
+   0.5000000000     0.5000000000     0.0000000000  30 !X
+   0.5000000000     0.7500000000     0.2500000000  30 !W
+   0.3750000000     0.7500000000     0.3750000000  30 !K
+   0.0000000000     0.0000000000     0.0000000000  30 !GAMMA
+

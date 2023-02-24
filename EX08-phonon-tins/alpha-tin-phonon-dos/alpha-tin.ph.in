@@ -1,0 +1,15 @@
+YOU NEED TO PUT HERE SOME TITLE :)
+ &inputph
+  tr2_ph   = 5.0d-14,
+  prefix   = 'germanium',
+  ldisp    = .true.
+    nq1 = 8
+    nq2 = 8
+    nq3 = 8
+  epsil    = .false.,
+  lraman   = .false.
+  trans    = .true.,
+  amass(1) = 72.64,
+  outdir   = 'calc',
+  fildyn   = 'ge.dyn.',
+ /

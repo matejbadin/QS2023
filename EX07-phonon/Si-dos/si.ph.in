@@ -1,0 +1,14 @@
+ &inputph
+  tr2_ph   = 5.0d-14,
+  prefix   = 'silicon',
+  ldisp    = .true.
+    nq1 = 8
+    nq2 = 8
+    nq3 = 8
+  epsil    = .false.,
+  lraman   = .false.
+  trans    = .true.,
+  amass(1) = 28.08,
+  outdir   = 'calc',
+  fildyn   = 'si.dyn.',
+ /

@@ -1,0 +1,9 @@
+ &PROJWFC
+  prefix     = 'ni'
+  outdir     = 'outdir'
+  filpdos    = 'ni.dos',
+  Emin       = -10.0,
+  Emax       = 20.0,
+  DeltaE     = 0.05
+ /
+  

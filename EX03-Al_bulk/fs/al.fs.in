@@ -1,0 +1,4 @@
+ &fermi
+    prefix = 'aluminium'
+    outdir = 'outdir'
+ /

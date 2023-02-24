@@ -1,0 +1,29 @@
+&control
+  calculation  = 'carbon-diamond-nscf',
+  prefix       = 'carbon-diamond',
+  outdir       = 'carbon-diamond-outdir',
+  pseudo_dir   = '../PP/'
+  disk_io      = 'low'
+  tstress      = .false.
+  tprnfor      = .false.
+  verbosity    = 'low'
+/
+&system
+  ibrav     = 2, 
+  celldm(1) = 6.515,
+  nat       = 2, 
+  ntyp      = 1,
+  nbnd      = 8
+  ecutwfc   = 18.0,
+  input_dft = 'rvv10',
+/
+ &electrons
+  diagonalization = 'david'
+ /
+ATOMIC_SPECIES
+ C  12.0107  C.rvv10-n-kjpaw_psl.1.0.0.UPF
+ATOMIC_POSITIONS crystal
+ C 0.00 0.00 0.00
+ C 0.25 0.25 0.25
+K_POINTS automatic
+ 12 12 12 0 0 0

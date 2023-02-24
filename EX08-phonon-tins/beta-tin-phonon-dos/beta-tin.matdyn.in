@@ -1,0 +1,11 @@
+ &input
+    asr      = 'simple', 
+    amass(1) = 72.64,
+    flfrc    = 'ge.fc',
+    flfrq    = 'ge.freq',
+    dos      = .true.
+    fldos    = 'ge.dos',
+    ndos     =  400
+    nk1 = 20, nk2 = 20, nk3 = 20,
+ /
+

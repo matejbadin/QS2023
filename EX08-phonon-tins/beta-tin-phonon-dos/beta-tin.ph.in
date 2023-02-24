@@ -1,0 +1,15 @@
+BETA-TIN PHONONS
+ &inputph
+  tr2_ph   = 5.0d-14,
+  prefix   = 'germanium',
+  ldisp    = .true.
+    nq1 = 6
+    nq2 = 6
+    nq3 = 6
+  epsil    = .false.,
+  lraman   = .false.
+  trans    = .true.,
+  amass(1) = 72.64,
+  outdir   = 'calc',
+  fildyn   = 'ge.dyn.',
+ /

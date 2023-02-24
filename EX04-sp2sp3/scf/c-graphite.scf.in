@@ -1,0 +1,29 @@
+ &control
+    calculation  = 'scf'
+    prefix       = 'carbon-graphite',
+    outdir       = 'carbon-graphite-outdir'
+    pseudo_dir   = '../PP/'
+    restart_mode = 'from_scratch',
+    tstress      = .true.
+    tprnfor      = .true.
+ /
+ &system
+    ibrav     = 4,
+    ==== FILL ME ==============
+    nat       = ?,
+    ntyp      = 1,
+    ecutwfc   = $CUTOFF$,
+    input_dft = 'rvv10',
+ /
+ &electrons
+    diagonalization = 'david'
+    mixing_mode     = 'plain'
+    mixing_beta     = 0.7
+    conv_thr        = 1.0d-8
+ /
+ATOMIC_SPECIES
+ C  12.0107  C.rvv10-n-kjpaw_psl.1.0.0.UPF
+ATOMIC_POSITIONS crystal
+=== FILL ME =========
+K_POINTS automatic
+=== FILL ME ========= (4 4 1)

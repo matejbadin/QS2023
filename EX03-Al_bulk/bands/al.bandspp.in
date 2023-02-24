@@ -1,0 +1,7 @@
+&bands
+    prefix     = 'aluminium',
+    outdir     = 'outdir',
+    filband    = 'al.bands',
+    no_overlap = .true.,
+/
+

@@ -1,0 +1,7 @@
+&bands
+    prefix     = "carbon-diamond",
+    outdir     = "outdir",
+    filband    = "c-diamond.bands",
+    no_overlap = .true.,
+/
+

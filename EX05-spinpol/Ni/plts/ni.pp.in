@@ -1,0 +1,11 @@
+ &INPUTPP
+  prefix  = "ni",
+  outdir  = "outdir"
+  filplot = "plt"
+  plot_num = 0
+ /
+ &plot
+  iflag = 3
+  output_format = 6
+  fileout = "CHD.cube"
+ /

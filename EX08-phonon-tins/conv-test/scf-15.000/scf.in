@@ -1,0 +1,29 @@
+ &control
+    calculation  = 'scf'
+    prefix       = 'germanium',
+    outdir       = 'outdir'
+    pseudo_dir   = '../../PP/'
+    restart_mode = 'from_scratch',
+    tstress      = .true.
+    tprnfor      = .true.
+ /
+ &system
+    ibrav     = 2, 
+    celldm(1) = 10.20, 
+    nat       = 2, 
+    ntyp      = 1,
+    ecutwfc   = 15.000,
+ /
+ &electrons
+    diagonalization = 'david'
+    mixing_mode     = 'plain'
+    mixing_beta     = 0.7
+    conv_thr        = 1.0d-8
+ /
+ATOMIC_SPECIES
+ Ge  28.086  Ge.pbe-dn-kjpaw_psl.0.2.2.UPF
+ATOMIC_POSITIONS crystal
+ Ge 0.00 0.00 0.00
+ Ge 0.25 0.25 0.25
+K_POINTS automatic
+ 6 6 6 0 0 0

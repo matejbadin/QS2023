@@ -1,0 +1,5 @@
+&PROJWFC
+  prefix  = 'carbon-graphite',
+  outdir  = 'carbon-graphite-outdir',
+  filpdos = 'carbon-graphite_pdos.dat'
+/

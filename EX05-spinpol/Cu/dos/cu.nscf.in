@@ -1,0 +1,26 @@
+&control
+  calculation  = 'nscf',
+  restart_mode = 'restart'
+  prefix       = 'cu',
+  outdir       = 'outdir',
+  pseudo_dir   = '../PP/'
+  disk_io      = 'low'
+  tstress      = .false.
+  tprnfor      = .false.
+  verbosity    = 'low'
+/
+&system
+  celldm(1) = 6.60
+  nat       = 1, 
+  ntyp      = 1,
+  nbnd      = 10
+/
+ &electrons
+  diagonalization = 'david'
+ /
+ATOMIC_SPECIES
+ Cu 1.0 Cu.pz-dn-rrkjus_psl.0.2.UPF
+ATOMIC_POSITIONS
+ Cu 0.0 0.0 0.0
+K_POINTS automatic
+ 15 15 15 0 0 0

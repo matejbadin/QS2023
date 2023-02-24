@@ -1,0 +1,28 @@
+&control
+  calculation  = 'nscf',
+  prefix       = 'silicon',
+  outdir       = 'outdir',
+  pseudo_dir   = '../PP/'
+  disk_io      = 'low'
+  tstress      = .false.
+  tprnfor      = .false.
+  verbosity    = 'low'
+/
+&system
+  ibrav     = 2, 
+  celldm(1) = 10.00, 
+  nat       = 2, 
+  ntyp      = 1,
+  nbnd      = 8
+  ecutwfc   = 18.0,
+/
+ &electrons
+  diagonalization = 'david'
+ /
+ATOMIC_SPECIES
+ Si  28.086  Si.pz-vbc.UPF
+ATOMIC_POSITIONS crystal
+ Si 0.00 0.00 0.00
+ Si 0.25 0.25 0.25
+K_POINTS automatic
+ 12 12 12 0 0 0

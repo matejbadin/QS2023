@@ -1,0 +1,11 @@
+ &input
+    asr      = 'simple', 
+    amass(1) = 28.08,
+    flfrc    = 'si.fc',
+    flfrq    = 'si.freq', 
+    dos      = .true.
+    fldos    = 'si.dos', 
+    ndos     =  400
+    nk1 = 20, nk2 = 20, nk3 = 20,
+ /
+

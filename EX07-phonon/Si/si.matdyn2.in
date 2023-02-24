@@ -1,0 +1,14 @@
+&input
+ asr      = 'simple',
+ amass(1) = 28.0855,
+ flfrc    = 'si.2.fc',
+ flfrq    = 'si.2.freq'
+ q_in_band_form   = .true.
+ q_in_cryst_coord = .true.
+/
+5
+  0.0000 0.0000  0.0000 30 !Gamma
+ -0.5000 0.0000 -0.5000 10 !X
+  0.0000 0.3750 -0.3750 20 !K
+  0.0000 0.0000  0.0000 30 !Gamma
+  0.0000 0.5000  0.0000 1  !L

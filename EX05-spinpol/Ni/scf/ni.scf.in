@@ -1,0 +1,32 @@
+ &control
+    calculation  = 'scf'
+    restart_mode = 'from_scratch',
+    pseudo_dir   = '../PP',
+    outdir       = 'outdir'
+    prefix       = 'ni'
+    tprnfor      = .true.,
+    tstress      = .true.
+ /
+ &system
+    ibrav        = 2, 
+    celldm(1)    = 6.50, 
+    nat          = 1, 
+    ntyp         = 1,
+    nspin        = 2,  
+    ecutwfc      = 34.0, 
+    ecutrho      = 388.0,
+    occupations  = 'smearing', 
+    smearing     = 'methfessel-paxton', 
+    degauss      = 0.02
+    starting_magnetization(1) = 0.1
+ /
+ &electrons
+    conv_thr     = 1.0e-8
+    mixing_beta  = 0.7
+ /
+ATOMIC_SPECIES
+ Ni 58.69 Ni.pz-n-rrkjus_psl.0.1.UPF
+ATOMIC_POSITIONS
+ Ni 0.0 0.0 0.0
+K_POINTS Automatic
+10 10 10 0 0 0
