@@ -10,17 +10,26 @@
   verbosity    = 'low'
 /
 &system
-  celldm(1) = 6.60
-  nat       = 1, 
-  ntyp      = 1,
-  nbnd      = 10
+  ibrav        = 2,
+  celldm(1)    = 6.835,
+  nat          = 1,
+  ntyp         = 1,
+  nspin        = 2,
+  nbnd         = 16
+  ecutwfc      = 50.0,
+  ecutrho      = 400.0,
+  occupations  = 'tetrahedra_opt',
+  starting_magnetization(1) = 0.1
 /
- &electrons
-  diagonalization = 'david'
- /
+&electrons
+  diagonalization = 'david',
+  mixing_mode     = 'plain',
+  mixing_beta     = 0.7,
+  conv_thr        = 1.0e-8,
+/
 ATOMIC_SPECIES
  Cu 1.0 Cu.pz-dn-rrkjus_psl.0.2.UPF
 ATOMIC_POSITIONS
  Cu 0.0 0.0 0.0
 K_POINTS automatic
- 15 15 15 0 0 0
+ 20 20 20 0 0 0
