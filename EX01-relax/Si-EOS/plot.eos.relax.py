@@ -17,19 +17,28 @@ def get_p_V():
     for root, directories, files in os.walk("."):
         for directory in sorted(directories):
             if "vc-relax-" in directory:
-                try:
-                    p = float(directory[9:])
+                #try:
+                p = float(directory[9:])
 
-                    output = open(root+"/"+directory+"/vc-relax.out").read()
+                fo = open(os.getcwd()+"/"+directory+"/vc-relax.out", 'r')
+                lines = fo.readlines()
+                fo.close()
 
-                    start_flag = output.rfind('new unit-cell volume')
-                    end_flag = output.find('\n',start_flag)
-                    V = float(output[start_flag:end_flag].split()[-3])
+                V = 0
 
-                    pV.append([p,V])
-                except:
-                    print('error')
-                    pass
+                for line in lines:
+                    if 'new unit-cell volume' in line:
+                        V = float(line.split()[7])
+
+                print(p)
+                print(V)
+
+                pV.append([p,V])
+
+                #except:
+                #    print('error')
+                #    pass
+
     return np.array(sorted(pV, key=lambda x: x[0]))
 
 pV = get_p_V()
