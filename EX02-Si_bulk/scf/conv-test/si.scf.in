@@ -12,7 +12,7 @@
     celldm(1) = 10.20, 
     nat       = 2, 
     ntyp      = 1,
-    ecutwfc   = $KATOF$,
+    ecutwfc   = $CUTOFF$,
  /
  &electrons
     diagonalization = 'david'

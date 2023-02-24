@@ -9,7 +9,7 @@ min_scf = 8
 max_scf = 45
 stp_scf = 25
 
-run_cmd = "mpirun -np 1 pw.x < scf.in > scf.out"
+run_cmd = "mpirun -np 1 /nfs/raid2/software/QE-7.1/bin/pw.x < scf.in > scf.out"
 
 for scf in np.linspace(min_scf, max_scf, stp_scf):
    
@@ -24,6 +24,6 @@ for scf in np.linspace(min_scf, max_scf, stp_scf):
     with open(source) as f:
         with open(wd + "/scf.in", "w") as fa:
             for line in f:
-                fa.write(line.replace("$KATOF$",sscf))
+                fa.write(line.replace("$CUTOFF$",sscf))
 
     os.system("cd "+wd+";"+run_cmd)
