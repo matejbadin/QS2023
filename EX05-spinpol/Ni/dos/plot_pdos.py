@@ -13,12 +13,12 @@ plt.rc('text', usetex=True)
 plt.figure(num=None, figsize=(6.4, 4.8), dpi=600, facecolor='w', edgecolor='k')
 
 # load DOS data
-total_dos = np.loadtxt('cu.dos.pdos_tot',skiprows=1)
-pdos_1s = np.loadtxt('cu.dos.pdos_atm#1(Cu)_wfc#1(s)',skiprows=1)
-pdos_2p = np.loadtxt('cu.dos.pdos_atm#1(Cu)_wfc#2(p)',skiprows=1)
-pdos_3d = np.loadtxt('cu.dos.pdos_atm#1(Cu)_wfc#3(d)',skiprows=1)
-#pdos_4s = np.loadtxt('cu.dos.pdos_atm#1(Cu)_wfc#4(s)',skiprows=1)
-#pdos_5p = np.loadtxt('cu.dos.pdos_atm#1(Cu)_wfc#5(p)',skiprows=1)
+total_dos = np.loadtxt('ni.dos.pdos_tot',skiprows=1)
+pdos_1s = np.loadtxt('ni.dos.pdos_atm#1(Ni)_wfc#1(s)',skiprows=1)
+pdos_2p = np.loadtxt('ni.dos.pdos_atm#1(Ni)_wfc#2(p)',skiprows=1)
+pdos_3d = np.loadtxt('ni.dos.pdos_atm#1(Ni)_wfc#3(d)',skiprows=1)
+#pdos_4s = np.loadtxt('ni.dos.pdos_atm#1(Ni)_wfc#4(s)',skiprows=1)
+#pdos_5p = np.loadtxt('ni.dos.pdos_atm#1(Ni)_wfc#5(p)',skiprows=1)
 
 
 energy = total_dos[:,0]
@@ -27,7 +27,7 @@ dosdown = total_dos[:,2]
 
 # find Fermi energy in non-selfconsistent calculation
 #E_Fermi = float(open('cu.dos','r').readline().split()[-2])
-lines = open('cu.nscf.out','r').readlines()
+lines = open('ni.nscf.out','r').readlines()
 for line in lines:
     if 'Fermi' in line:
         E_Fermi = float(line.split()[-2])
