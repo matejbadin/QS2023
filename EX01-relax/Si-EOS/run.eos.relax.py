@@ -10,7 +10,7 @@ min_press = 0
 max_press = 20
 stp_press = 21
 
-run_cmd = 'mpirun -np 2 /nfs/raid2/software/QE-7.1/pw.x < vc-relax.in > vc.relax.out'
+run_cmd = 'mpirun -np 2 /nfs/raid2/software/QE-7.1/bin/pw.x < vc-relax.in > vc.relax.out'
 
 for press in np.linspace(min_press, max_press, stp_press):
     
