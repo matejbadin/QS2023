@@ -4,7 +4,7 @@
     prefix        = 'silicon',
     tstress       = .true.,
     tprnfor       = .true.,
-    pseudo_dir    = '~/PP_eff'
+    pseudo_dir    = '../PP'
     outdir        = 'outdir',
     forc_conv_thr = 1.0d-4,
  /
@@ -28,7 +28,7 @@
     press = $PRESS$
  /
 ATOMIC_SPECIES
- Si  28.086  Si.pbe-n-rrkjus_psl.1.0.0.UPF
+ Si  28.086  Si.pbe-n-kjpaw_psl.1.0.0.UPF
 ATOMIC_POSITIONS crystal
  Si 0.00 0.00 0.00 0 0 0
  Si 0.25 0.25 0.25
