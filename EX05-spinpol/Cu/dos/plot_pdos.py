@@ -17,8 +17,8 @@ total_dos = np.loadtxt('cu.dos.pdos_tot',skiprows=1)
 pdos_1s = np.loadtxt('cu.dos.pdos_atm#1(Cu)_wfc#1(s)',skiprows=1)
 pdos_2p = np.loadtxt('cu.dos.pdos_atm#1(Cu)_wfc#2(p)',skiprows=1)
 pdos_3d = np.loadtxt('cu.dos.pdos_atm#1(Cu)_wfc#3(d)',skiprows=1)
-pdos_4s = np.loadtxt('cu.dos.pdos_atm#1(Cu)_wfc#4(s)',skiprows=1)
-pdos_5p = np.loadtxt('cu.dos.pdos_atm#1(Cu)_wfc#5(p)',skiprows=1)
+#pdos_4s = np.loadtxt('cu.dos.pdos_atm#1(Cu)_wfc#4(s)',skiprows=1)
+#pdos_5p = np.loadtxt('cu.dos.pdos_atm#1(Cu)_wfc#5(p)',skiprows=1)
 
 
 energy = total_dos[:,0]
@@ -37,20 +37,20 @@ plt.plot(energy-E_Fermi,dosup,color='red',lw=0.2,label='total spin up')
 plt.plot(energy-E_Fermi,-1*dosdown,color='blue',lw=0.2,label='total spin down')
 
 # s states
-#plt.plot(energy-E_Fermi,100*pdos_1s[:,1],color='red',lw=0.2,label='1s spin up')
-#plt.plot(energy-E_Fermi,-100*pdos_1s[:,2],color='blue',lw=0.2,label='1s spin down')
+plt.plot(energy-E_Fermi,100*pdos_1s[:,1],color='red',lw=0.2,label='1s spin up')
+plt.plot(energy-E_Fermi,-100*pdos_1s[:,2],color='blue',lw=0.2,label='1s spin down')
 
 # 2p states
-#plt.plot(energy-E_Fermi,100*pdos_2p[:,1],color='red',lw=0.2,label='2p spin up')
-#plt.plot(energy-E_Fermi,-100*pdos_2p[:,2],color='blue',lw=0.2,label='2p spin down')
+plt.plot(energy-E_Fermi,100*pdos_2p[:,1],color='red',lw=0.2,label='2p spin up')
+plt.plot(energy-E_Fermi,-100*pdos_2p[:,2],color='blue',lw=0.2,label='2p spin down')
 
 # 3d states
 plt.plot(energy-E_Fermi,1*pdos_3d[:,1],'--',color='red',lw=0.2,label='3d spin up')
 plt.plot(energy-E_Fermi,-1*pdos_3d[:,2],'--',color='blue',lw=0.2,label='3d spin down')
 
 # 4s states
-plt.plot(energy-E_Fermi,1*pdos_4s[:,1],'-.',color='red',lw=0.2,label='4s spin up')
-plt.plot(energy-E_Fermi,-1*pdos_4s[:,2],'-.',color='blue',lw=0.2,label='4s spin down')
+#plt.plot(energy-E_Fermi,1*pdos_4s[:,1],'-.',color='red',lw=0.2,label='4s spin up')
+#plt.plot(energy-E_Fermi,-1*pdos_4s[:,2],'-.',color='blue',lw=0.2,label='4s spin down')
 
 # 5p states
 #plt.plot(energy-E_Fermi,1*pdos_2p[:,1],color='red',lw=0.2,label='5p spin up')
