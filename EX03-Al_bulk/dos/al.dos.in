@@ -3,6 +3,6 @@
   prefix   = "aluminium"
   fildos   = "al.dos",
   Emin     = -10.0,
-  Emax     = 20.0,
-  DeltaE   = 0.1
+  Emax     = 40.0,
+  DeltaE   = 0.05
 /
