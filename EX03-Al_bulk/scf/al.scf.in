@@ -8,14 +8,15 @@
     tstress      = .true.
  /
  &system
-    ibrav       = 2,
-    celldm(1)   = 7.50,
-    nat         = 1,
-    ntyp        = 1,
-    ecutwfc     = 15.0,
-    occupations = 'smearing',
-    smearing    = 'marzari-vanderbilt', 
-    degauss     = 0.05
+  ibrav     = 2,
+  celldm(1) = 7.50,
+  nat       = 1,
+  ntyp      = 1,
+  ecutwfc   = 50.0,
+  ecutrho   = 500.0,
+  occupations = 'smearing',
+  smearing    = 'marzari-vanderbilt',
+  degauss     = 0.005
  /
  &electrons
     diagonalization = 'david'
