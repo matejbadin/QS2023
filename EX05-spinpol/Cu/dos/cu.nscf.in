@@ -28,7 +28,7 @@
   conv_thr        = 1.0e-8,
 /
 ATOMIC_SPECIES
- Cu 1.0 Cu.pz-dn-rrkjus_psl.0.2.UPF
+ Cu 58.69 Cu.pz-dn-rrkjus_psl.0.2.UPF
 ATOMIC_POSITIONS
  Cu 0.0 0.0 0.0
 K_POINTS automatic
