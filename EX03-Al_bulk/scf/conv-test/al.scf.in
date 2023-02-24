@@ -22,7 +22,7 @@
     mixing_beta     = 0.7
  /
 ATOMIC_SPECIES
- Al  26.98 Al.pz-vbc.UPF
+ Al  26.98 Al.pbe-n-kjpaw_psl.1.0.0.UPF
 ATOMIC_POSITIONS
  Al 0.00 0.00 0.00
 K_POINTS automatic

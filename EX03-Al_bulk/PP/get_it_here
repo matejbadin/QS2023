@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-
-wget http://www.quantum-espresso.org/wp-content/uploads/upf_files/Al.pz-vbc.UPF
