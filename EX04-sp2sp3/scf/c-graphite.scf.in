@@ -2,7 +2,7 @@
   calculation = 'scf'
   etot_conv_thr =   4.0000000000d-05
   forc_conv_thr =   1.0000000000d-04
-  outdir = './out/'
+  outdir = 'carbon-graphite-outdir'
   prefix = 'carbon-graphite'
   pseudo_dir = '../PP/'
   tprnfor = .true.
