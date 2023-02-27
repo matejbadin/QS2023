@@ -27,7 +27,7 @@ results = sorted(results, key=lambda x: x[0])
 results = np.array(results).T
 
 def func(x, a, b):
-    return a * (x - b)**2
+    return 0.5 * a * (x - b)**2
 
 popt, pcov = curve_fit(func, results[0,2:7], results[1,2:7] - np.min(results[1,2:7]))
 
