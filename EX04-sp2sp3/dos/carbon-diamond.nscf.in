@@ -14,9 +14,7 @@
     nat       = 2,
     ntyp      = 1,
     ecutwfc   = 50,
-    occupations = 'smearing',
-    smearing = 'gaussian',
-    degauss = 0.01,
+    occupations = 'tetrahedra_opt',
  /
  &electrons
     diagonalization = 'david'
