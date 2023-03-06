@@ -15,9 +15,7 @@
     ntyp      = 1,
     ecutwfc   = 45.0,
     ecutrho   = 360.0,
-    occupations = 'smearing',
-    smearing = 'gaussian',
-    degauss = 0.01,
+    occupations = 'tetrahedra',
  /
  &electrons
     conv_thr    = 1.0d-8

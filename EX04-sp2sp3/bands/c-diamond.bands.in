@@ -11,13 +11,12 @@
     ntyp      = 1,
     ecutwfc   = 23.0, 
     nbnd      = 4,
-    input_dft = 'rvv10',
  /
  &electrons
     diagonalization='david'
  /
 ATOMIC_SPECIES
- C  12.0107  C.rvv10-n-kjpaw_psl.1.0.0.UPF
+ C  12.0107  C.pbe-n-kjpaw_psl.1.0.0.UPF
 ATOMIC_POSITIONS crystal
  C  0.000 0.000 0.000
  C  0.250 0.250 0.250

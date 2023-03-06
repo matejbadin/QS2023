@@ -1,7 +1,0 @@
-&bands
-    prefix     = "carbon-graphite",
-    outdir     = "carbon-graphite-outdir",
-    filband    = "c-graphite.bands",
-    no_overlap = .true.,
-/
-

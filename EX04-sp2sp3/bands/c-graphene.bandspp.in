@@ -1,0 +1,7 @@
+&bands
+    prefix     = "carbon-graphene",
+    outdir     = "carbon-graphene-outdir",
+    filband    = "c-graphene.bands",
+    no_overlap = .true.,
+/
+
